@@ -352,4 +352,4 @@ MigrationBackup/
 *.Development.json
 *.db
 /Arma3TacMapWebApp/wwwroot/help/legal.html
-Arma3TacMapWebApp/appsettings.json
+/Arma3TacMapWebApp/appsettings.json
