@@ -3,13 +3,13 @@
 @{
     ViewData["Title"] = "PLANOPS Maps";
 }
-<div class="container">
+<div class="container-fluid pt-3 mx-3">
     <div class="row">
 
-        <div class="col-md-6">
+        <div class="col-md-8">
             <h2>@Localizer["Create tactical map"]</h2>
 
-            <div class="row justify-content-center">
+            <div class="row justify-content-left">
                 @foreach (var map in Model.Maps)
                 {
                     <a class="btn btn-outline-secondary m-2" asp-action="CreateMap" asp-route-id="@map.worldName">
@@ -23,7 +23,7 @@
                 }
             </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-auto">
             <h2>@Localizer["Existing tactical maps"]</h2>
             @if (Model.TacMaps.Count == 0)
             {
